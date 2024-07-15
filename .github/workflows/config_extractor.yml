@@ -27,7 +27,7 @@ jobs:
           TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
           TELEGRAM_CHANNEL_ID: ${{ secrets.TELEGRAM_CHANNEL_ID }}
         run: |
-          python config_processor.py
+          python v2ray_config_extractor.py
 
       - name: Log run info
         run: |
