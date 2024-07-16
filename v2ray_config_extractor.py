@@ -154,7 +154,7 @@ async def send_configs_to_telegram(configs: List[str]):
 
 منتظر نظرات و پیشنهادات شما هستیم! ❤️"""
         
-    await asyncio.sleep(3)  # Add a delay before sending the final message
+    await asyncio.sleep(2.5)  # Add a delay before sending the final message
     await send_telegram_message(bot, TELEGRAM_CHANNEL_ID, final_message)
     logger.info("Sent final message to Telegram")
 
