@@ -117,7 +117,7 @@ async def send_configs_to_telegram(configs: List[str]):
 
     for i in range(0, len(configs), 6):
         batch = configs[i:i+6]
-        message = f"{CHANNEL_NAME} \n 🍕 جدیدترین کانفیگها:\n\n"
+        message = "🍕 جدیدترین کانفیگها:\n\n"
         message += f"```\n"
         for config in batch:
             message += f"{config}\n"
