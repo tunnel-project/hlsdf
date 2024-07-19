@@ -159,7 +159,7 @@ https://t.me/HarfinoBot?start=78ea88f6137d0ce
 
 ✳️ اعضا به ۲۰۰۰ برسه براتون دامین میگیرم و لینک سابمون رو هم راه میندازیم.
 
-{CHANNEL_NAME}"""
+{CHANNEL_NAME} \n #vpn #کانفیگ"""
 
     await asyncio.sleep(3)  # Add a delay before sending the final message
     await send_telegram_message(bot, TELEGRAM_CHANNEL_ID, final_message)
@@ -173,7 +173,7 @@ async def send_config_file(bot: Bot, configs: List[str], filename: str, retry_co
     file_obj.name = filename
 
     try:
-        caption = f"Config file: {filename} #فایل\n\n{CHANNEL_NAME}"
+        caption = f"Config file: {filename} \n #فایل #vpn #v2ray #کانفیگ\n\n{CHANNEL_NAME}"
         await bot.send_document(chat_id=TELEGRAM_CHANNEL_ID, document=file_obj, caption=caption)
         logger.info(f"Sent config file {filename} to Telegram with #فایل caption and channel name")
         await asyncio.sleep(3)  # Add a delay after sending the file
